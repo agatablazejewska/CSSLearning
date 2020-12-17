@@ -20,7 +20,7 @@ body {
     background-repeat: no-repeat;
 }
 
-body, .age {
+body {
     font-size: 1.125rem;
 }
 
@@ -59,6 +59,15 @@ body, .age {
 
 .data-header {
     font-weight: 700;
+}
+
+.data-content {
+    font-size: 0.8rem;
+    color: #6B7082;
+}
+
+.age {
+    font-size: 1.125rem;
 }
 
 .main__personal-data {
