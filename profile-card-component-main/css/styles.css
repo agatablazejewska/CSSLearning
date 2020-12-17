@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+html {
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+}
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(25,161,174);
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+}
+
+body, .age {
+    font-size: 1.125rem;
+}
+
+.card {
+    background-color: #fefefe;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 30%;
+    min-width: 325px;
+    min-height: 374px;
+    border-radius: 5%;
+}
+
+.card__header {
+    width: 100%;
+    height: 35%;
+    background: url("../images/bg-pattern-card.svg");
+    background-size: 101%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card__person-photo {
+    position: relative;
+    border: solid #fefefe;
+    border-radius: 50%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-header {
+    font-weight: 700;
+}
+
+.main__personal-data {
+    display: flex;
+    justify-content: center;
+}
+
+.main__city {
+    margin: 0 0 40% 0;
+}
+
+.stats {
+    border-top: solid #979797 1px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 5% 0;
+    padding: 2% 5%;
+}
+
+.attribution-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.attribution {
+    font-size: 11px;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width: 1441px) {
+    body {
+        background-size: 100em;
+        background-position:  right 50vw bottom 30vh, left 50vw top 30vh;
+    }
+
+    .card {
+        max-width: 450px;
+    }
+
+    .card__person-photo {
+        width: 8em;
+        bottom: -4.8em;
+        border-width: 0.6em;
+    }
+
+    .main {
+        margin-top: 20%;
+    }
+
+    .main__name {
+        margin-right: 0.7em;
+    }
+
+}
+
+@media (max-width: 1440px) {
+    body {
+        background-position:  right 50vw bottom 45vh, left 50vw top 45vh;
+    }
+
+    .card {
+        max-width: 350px;
+    }
+
+    .card__person-photo {
+        width: 6rem;
+        bottom: -3em;
+        border-width: 0.4em;
+    }
+
+    .main {
+        margin-top: 15%;
+    }
+
+    .main__name {
+        margin-right: 0.5em;
+    }
+}
+
+@media(max-width: 375px) {
+    body {
+        background-position:  right 50vw bottom 35vh, left 50vw top 35vh;
+    }
+
+    .card {
+        max-width: 325px;
+    }
+}
+
