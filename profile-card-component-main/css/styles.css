@@ -95,11 +95,16 @@ body, .age {
 @media(min-width: 1441px) {
     body {
         background-size: 100em;
-        background-position:  right 50vw bottom 30vh, left 50vw top 30vh;
+        background-position:  right 45vw bottom 30vh, left 45vw top 30vh;
+    }
+
+    body, .age {
+        font-size: 3rem;
     }
 
     .card {
-        max-width: 450px;
+        width: 30em;
+        max-width: 1200px;
     }
 
     .card__person-photo {
@@ -113,7 +118,11 @@ body, .age {
     }
 
     .main__name {
-        margin-right: 0.7em;
+        margin-right: 0.4em;
+    }
+
+    .attribution {
+        font-size: 2rem;
     }
 
 }
