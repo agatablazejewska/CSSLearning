@@ -13,7 +13,6 @@ html {
 }
 
 body {
-    padding-top: 5em;
     height: 100%;
     width: 100%;
     font-size: 0.75rem;
@@ -23,55 +22,63 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 110px 85px 1fr;
+}
+
+.images {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.images-main {
+    grid-row: 1/3;
+    z-index: 3;
+}
+
+.images-background {
+    grid-row: 1/3;
+    z-index: 2;
+    align-self: flex-end;
 }
 
 .card {
+    grid-column: 1;
+    grid-row: 2/4;
     background-color: #FFFFFF;
-    margin: 0 auto 2em auto;
-    padding: 2em 0;
     height: fit-content;
-    position: relative;
     border-radius: 3em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 95px 2rem 1fr;
 }
 
-.image-main {
-    position: absolute;
-    top: -9em;
-    left: 0.9em;
-}
-
-.image-background {
-    position: absolute;
-    z-index: 2;
-    top: -1em;
-    right: 3.5em;
-}
- .images {
-     height: 10%;
- }
-
- .card__content {
-     padding: 5em 2em;
- }
 
 .card__header {
-    text-align: center;
     font-size: 2rem;
     font-weight: 700;
-    padding-bottom: 0.5em;
-}
-
-.card__item {
-    border-bottom: solid 1px #E8E8EA;
-    padding: 2em 0;
-}
-
-.item__header {
+    grid-row: 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.item__header a {
+.items {
+    padding: 2em;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 1em;
+}
+
+
+.items__header {
     text-decoration: none;
     color: #4B4C5F;
 }
@@ -80,17 +87,21 @@ body {
     font-weight: 700;
 }
 
-.item__content {
+.items__content {
     display: none;
     padding-top: 1em;
     padding-right: 2em;
 }
 
-.item__content-active {
+.items__content-active {
     display: block;
 }
 
-
+.items__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 .active img {
     transform: rotate(180deg);
@@ -105,7 +116,7 @@ body {
 }
 
 @media(min-width: 320px) {
-    .card {
-        width: min(320px, 90%);
+    main {
+        width: 90%;
     }
 }

@@ -10,60 +10,37 @@
   <title>Frontend Mentor | FAQ Accordion Card</title>
 </head>
 <body>
-	<main class="card">
-		<div class="images">
-			<img class="image-main"
-			     src="images/illustration-woman-online-mobile.svg"
-			     alt="woman clicking on a computer screen">
-			<img class="image-background" src="images/bg-pattern-mobile.svg"
-			     alt="shadow of a box">
+	<main>
+		<div class="images images-main">
+			<img src="images/illustration-woman-online-mobile.svg" alt="woman clicking on a computer screen">
 		</div>
-		<div class="card__content">
-			<div class="card__header">FAQ</div>
-			<div class="card__item">
-				<div class="item__header item__header-active">
-					<a href="#"
-					   class="active"><p>How many team members can I
-					                   invite?</p></a>
-					<a href="#" class="active"><img src="images/icon-arrow-down.svg"></a>
-				</div>
-				<p class="item__content active">You can invite up to 2
-				                               additional
-				                          users on the Free plan.
-				                         There is no limit on team members for the Premium plan.</p>
-			</div>
-			<div class="card__item">
-				<div class="item__header">
-					<a href="#">What is the maximum file upload size?</a>
-					<a href="#"><img src="images/icon-arrow-down.svg"></a>
-				</div>
-				<p class="item__content">No more than 2GB. All files in your account must fit your
-				                         allotted storage space.</p>
-			</div>
-			<div class="card__item">
-				<div class="item__header">
-					<a href="#"><p>How do I reset my password?</p></a>
-					<a href="#"><img src="images/icon-arrow-down.svg"></a>
-				</div>
-				<p class="item__content">Click “Forgot password” from the login page or “Change
-				                         password” from your profile page.
-				                         A reset link will be emailed to you.</p>
-			</div>
-			<div class="card__item">
-				<div class="item__header">
-					<a href="#"><p>Can I cancel my subscription?</p></a>
-					<a href="#"><img src="images/icon-arrow-down.svg"></a>
-				</div>
-				<p class="item__content">Yes! Send us a message and we’ll process your request no
-				                         questions asked.</p>
-			</div>
-			<div class="card__item">
-				<div class="item__header">
-					<a href="#"><p>Do you provide additional support?</p></a>
-					<a href="#"><img src="images/icon-arrow-down.svg"></a>
-				</div>
-				<p class="item__content">Chat and email support is available 24/7. Phone lines are
-				                         open during normal business hours.</p>
+		<div class="images images-background">
+			<img src="images/bg-pattern-mobile.svg" alt="shadow of a box">
+		</div>
+
+		<div class="card">
+			<div class="card__header"><p>FAQ</p></div>
+			<div class="items">
+				<a href="#" class="items__header question1"><p>How many team members can I invite?</p></a>
+				<a href="#" class="items__arrow question1"><img src="images/icon-arrow-down.svg"></a>
+				<p class="items__content question1">You can invite up to 2
+				                                    additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+
+				<a href="#" class="items__header question2">What is the maximum file upload size?</a>
+				<a href="#" class="items__arrow question2"><img src="images/icon-arrow-down.svg"></a>
+				<p class="items__content question2">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+
+				<a href="#" class="items__header question3"><p>How do I reset my password?</p></a>
+				<a href="#" class="items__arrow question3"><img src="images/icon-arrow-down.svg"></a>
+				<p class="items__content question3">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+
+				<a href="#" class="items__header question4"><p>Can I cancel my subscription?</p></a>
+				<a href="#" class="items__arrow question4"><img src="images/icon-arrow-down.svg"></a>
+				<p class="items__content question4">Yes! Send us a message and we’ll process your request no questions asked.</p>
+
+				<a href="#" class="items__header question5"><p>Do you provide additional support?</p></a>
+				<a href="#" class="items__arrow question5"><img src="images/icon-arrow-down.svg"></a>
+				<p class="items__content question5">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
 			</div>
 		</div>
 	</main>
