@@ -81,13 +81,13 @@ main {
     grid-row: 3;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, min-content);
 }
 
 .item {
     display: grid;
     grid-template-columns: 7fr 0.7fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: min-content;
     border-bottom: 1px solid #E8E8EA;
 }
 
@@ -117,16 +117,17 @@ main {
     color: #4B4C5F;
     display: block;
     height: 1em;
-    padding: 1.5em 0 1.5em 0;
+    margin: 1.7em 0 1.7em 0;
 }
 
 .item__header:hover {
     color: #F47B56;
-    cursos: pointer;
+    cursor: pointer;
 }
 
 .item__header.active {
     font-weight: 700;
+    margin-bottom: 0.7em;
 }
 
 .item__content {
@@ -136,7 +137,7 @@ main {
 
 .item__content.active {
     display: block;
-    margin: 0.5em 0 1em 0;
+    margin: 0em 0 1em 0;
 }
 
 .item__arrow {
