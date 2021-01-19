@@ -1,7 +1,15 @@
 const clickable = document.querySelectorAll("button");
 
+const inactivatePreviouslyActiveElems = (currentlyActive) => {
+    const previouslyActiveElems = Array.from(document.querySelectorAll('.active'))
+        .filter(elem => !currentlyActive.includes(elem));
+    previouslyActiveElems.forEach(elem => elem.classList.remove('active'));
+}
+
 const toggleActiveClass = (element, parentElement) => {
     const allSiblings = Array.from(parentElement.children);
+
+    inactivatePreviouslyActiveElems(allSiblings);
 
     allSiblings.forEach(elem => elem.classList.toggle('active'));
 }
