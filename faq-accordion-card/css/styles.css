@@ -188,7 +188,7 @@ button:hover {
     }
 
     .items {
-        padding: 2em 1.2em 3em 1.2em;
+        padding: 2em 2em 3em 2em;
     }
 
     .item__content.active {
@@ -199,10 +199,6 @@ button:hover {
 @media(min-width: 390px) {
     main {
         max-width: 80%;
-    }
-
-    .items {
-        padding: 2em 1em 3em 1.5em;
     }
 }
 
@@ -233,6 +229,7 @@ button:hover {
 @media(min-width: 900px) {
     main {
         max-width: 85%;
+        min-width: 83%;
         margin-right: 10%;
         display: grid;
         grid-template-columns: 50px 50px 2fr 2fr;
@@ -246,7 +243,9 @@ button:hover {
         grid-template-columns: 1fr 100px 1.5fr;
         grid-template-rows: 0.5fr 3fr;
         grid-gap: 0;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding-bottom: 4em;
     }
 
     .images-desktop-background, .images-box, .images-desktop-main {
@@ -263,22 +262,19 @@ button:hover {
         z-index: 4;
         display: flex;
         justify-content: center;
+        align-items: center;
         position: relative;
     }
 
-    .images-box {
-        top: 23%;
-    }
-
     .images__desktop {
-        width: max(320px, 45%);
+        width: max(350px, 30%);
         height: max(400px, 35%);
         grid-column: 1;
         grid-row: 1/3;
     }
 
     .images-desktop-main {
-        width: max(320px, 100%);
+        width: max(350px, 100%);
         height: max(400px, 100%);
         z-index: 3;
         display: flex;
@@ -288,7 +284,7 @@ button:hover {
     }
 
     .images-desktop-background {
-        width: max(320px, 100%);
+        width: max(350px, 100%);
         height: max(400px, 100%);
         z-index: 2;
         display: flex;
@@ -297,17 +293,17 @@ button:hover {
     }
 
     .images-desktop-main img {
-        width: max(320px, 100%);
+        width: max(350px, 100%);
         position: absolute;
-        top: 20%;
+        top: 27%;
         left: -10%;
     }
 
     .images-desktop-background img {
-        width: max(650px, 100%);
+        width: max(630px, 100%);
         position: absolute;
-        top: -135%;
-        left: -110%;
+        top: -125%;
+        left: -90%;
     }
 
     .card__header {
@@ -315,14 +311,13 @@ button:hover {
         grid-row: 1;
         justify-content: flex-start;
         padding-top: 1.5em;
-        padding-bottom: 1em;
+        padding-bottom: 0.5em;
     }
 
     .items {
         grid-column: 3;
         grid-row: 2;
-        padding-left: 0;
-        padding-top: 0;
+        padding: 0 3em 0 0;
     }
 
     .item__content {
@@ -332,15 +327,12 @@ button:hover {
 
 @media(min-width: 1100px) {
     main {
-        max-width: 75%;
+        max-width: 65%;
+        min-width: 65%;
     }
 
     .card {
         grid-template-columns: 1fr 100px 1.5fr;
-    }
-
-    .images-box {
-        top: 26%;
     }
 
     .images__desktop {
@@ -373,42 +365,39 @@ button:hover {
 
 @media(min-width: 1370px) {
     main {
-        max-width: 75%;
+        max-width: 60%;
+        min-width: 40%;
         grid-template-columns: 0.5fr 0.5fr 2fr 2fr;
     }
 
     .card {
-        grid-template-columns: 50% 80px 1fr;
-    }
-
-    .images-box {
-        top: 28%;
+        grid-template-columns: 50% 30px 1fr;
     }
 
     .images__desktop {
-        width: max(500px, 45%);
+        width: max(450px, 45%);
         height: max(450px, 35%);
     }
 
     .images-desktop-main {
-        width: max(500px, 100%);
+        width: max(450px, 100%);
         height: max(400px, 100%);
     }
 
     .images-desktop-background {
-        width: max(500px, 100%);
+        width: max(450px, 100%);
         height: max(400px, 100%);
     }
 
     .images-desktop-main img {
-        top: 7%;
+        top: 10%;
         left: -15%;
     }
 
     .images-desktop-background img {
-        width: max(966px, 100%);
-        top: -178%;
-        left: -110%;
+        width: max(900px, 100%);
+        top: -165%;
+        left: -115%;
     }
 
     .item__content {
